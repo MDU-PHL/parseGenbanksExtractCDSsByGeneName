@@ -4,7 +4,7 @@ Takes a list of CDS gene names (whitespace separated) and extracts the genes fro
 ## Example usage:
 ### In series:
     
-```
+```bash
 python parseGenbanksExtractCDSsByGeneName.py -g *.gbk -c accA accB_2 accD
 ```
 
