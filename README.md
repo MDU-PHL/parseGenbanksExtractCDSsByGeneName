@@ -35,7 +35,7 @@ nice parallel -j 72 python parseGenbanksExtractCDSsByGeneName.py \
 ```
 
 ### Output files:
-The output files (*.fasta) contain one fasta entry per hit.  To count the number of fasta entries per files, do:
+The output files (*.fasta) contain one fasta entry per hit.  To count the number of fasta entries per file, do:
 ```bash
 arr=(*.fasta)
 for i in ${arr[@]}; do echo $i; grep \> $i | wc -l; done
