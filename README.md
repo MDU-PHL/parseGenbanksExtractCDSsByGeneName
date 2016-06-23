@@ -4,7 +4,7 @@ Takes a list of CDS gene names (whitespace separated) and extracts the DNA seque
 ## Example usage:
 
 ```bash
-python ~/scripts/schultzm/parseGenbanksExtractCDSsByGeneName.py -h
+python parseGenbanksExtractCDSsByGeneName.py -h
 usage: parseGenbanksExtractCDSsByGeneName.py [-h]
                                              [-c CDS_NAMES [CDS_NAMES ...]] -g
                                              GENBANK_FILES [GENBANK_FILES ...]
