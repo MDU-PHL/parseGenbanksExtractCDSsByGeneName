@@ -11,7 +11,7 @@ python parseGenbanksExtractCDSsByGeneName.py -g *.gbk -c accA accB_2 accD
 ### In parallel:
     Save your gene list to txt file, one gene name per line in file, then use:
 
-```
+```bash
 nice parallel -j 72 python parseGenbanksExtractCDSsByGeneName.py \
 -g *.gbk -c {} :::: core_genes_list.txt
 ```
