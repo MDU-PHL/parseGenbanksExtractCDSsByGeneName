@@ -35,10 +35,16 @@ nice parallel -j 72 python parseGenbanksExtractCDSsByGeneName.py \
 ```
 
 ### Output files:
-The output files (*.fasta) contain one fasta entry per hit.  To count the number of fasta entries per file, do:
+The output files (*.fasta) contain one fasta entry per hit.  For core genes, there should be as many fasta entries per file as there are query isolates.  To count the number of fasta entries per file, do:
 ```bash
 arr=(*.fasta)
 for i in ${arr[@]}; do echo $i; grep \> $i | wc -l; done
 ```
 
+To run codon-aware alignment using [MACSE](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0022594), [download MACSE](http://bioweb.supagro.inra.fr/macse/index.php?menu=releases&option=releases), unzip it, find the .jar file and then do:
+
+```
+java -jar macse_v1.2.jar -prog alignSequences -seq ../../locus_name.fasta -gc_def 11
+#if you get an error about the translation tables not being found, move the translation tables to the location stated in the error report
+```
 
