@@ -46,7 +46,7 @@ To run codon-aware alignment using [MACSE](http://journals.plos.org/plosone/arti
 ```
 java -jar macse_v1.2.jar -prog alignSequences -seq path/to/locus_name.fasta -gc_def 11
 
-#In parallel, start a 'screen' session (remove the '--dry-run' when ready to run) and do:
+#In parallel, start a 'screen' session with 'screen -S macse' (remove the '--dry-run' when ready to run) and do:
 nice parallel --dry-run -j 72 java -jar macse_v1.2.jar -prog alignSequences -seq {} -gc_def 11 ::: path/to/*.fasta
 
 #NB: if you get an error about the translation tables not being found, move the translation 
