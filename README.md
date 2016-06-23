@@ -4,15 +4,15 @@ Takes a list of CDS gene names (whitespace separated) and extracts the genes fro
 ## Example usage:
 ### In series:
     
-    ```
-    python parseGenbanksExtractCDSsByGeneName.py -g *.gbk -c accA accB_2 accD
-    ```
+```
+python parseGenbanksExtractCDSsByGeneName.py -g *.gbk -c accA accB_2 accD
+```
 
 ### In parallel:
     Save your gene list to txt file, one gene name per line in file, then use:
 
-    ```
-    nice parallel -j 72 python parseGenbanksExtractCDSsByGeneName.py \
-    -g *.gbk -c {} :::: core_genes_list.txt
-    ```
+```
+nice parallel -j 72 python parseGenbanksExtractCDSsByGeneName.py \
+-g *.gbk -c {} :::: core_genes_list.txt
+```
 
