@@ -45,6 +45,7 @@ To run codon-aware alignment using [MACSE](http://journals.plos.org/plosone/arti
 
 ```
 java -jar macse_v1.2.jar -prog alignSequences -seq path/to/locus_name.fasta -gc_def 11
-#if you get an error about the translation tables not being found, move the translation tables to the location stated in the error report
+#if you get an error about the translation tables not being found, move the translation 
+#tables to the location stated in the error report and then re-run
 ```
 
