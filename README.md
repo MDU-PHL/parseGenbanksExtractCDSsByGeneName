@@ -1,5 +1,5 @@
 # parseGenbanksExtractCDSsByGeneName
-Takes a list of CDS gene names (whitespace separated) and extracts the genes from a list of genbank files (can do *.gbk files) and outputs a multi-fasta file for each CDS name.  Useful for, for example, extracting the fasta sequences for core genes as detected by Roary. 
+Takes a list of CDS gene names (whitespace separated) and extracts the genes from a list of genbank files (can do *.gbk files) and outputs a multi-fasta file for each CDS name.  Useful for, for example, extracting the fasta sequences from multiple genbanks for a list of core genes as detected by Roary.
 
 ## Example usage:
 ### In series:
