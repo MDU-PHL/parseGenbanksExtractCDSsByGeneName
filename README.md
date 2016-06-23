@@ -1,5 +1,5 @@
 # parseGenbanksExtractCDSsByGeneName
-Takes a list of CDS gene names (whitespace separated) and extracts the genes from a list of genbank files (can do *.gbk files) and outputs a multi-fasta file for each CDS name.  Useful for, for example, extracting the fasta sequences from multiple genbanks for a list of core genes as detected by Roary. Output is one unaligned fasta file per locus – use something like [MACSE](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0022594) to perform codon-aware alignment.
+Takes a list of CDS gene names (whitespace separated) and extracts the DNA sequences from a list of genbank files (can do *.gbk files) and outputs a DNA multi-fasta file for each CDS name.  Useful for, for example, extracting the fasta DNA sequences from multiple prokka-annotated genbanks for a list of core genes as detected by Roary. Output is one unaligned fasta file per locus – use something like [MACSE](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0022594) to perform codon-aware alignment.
 
 ## Example usage:
 ### In series:
