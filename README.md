@@ -30,7 +30,7 @@ python parseGenbanksExtractCDSsByGeneName.py -g *.gbk -c accA accB_2 accD
     Save your gene list to txt file, one gene name per line in file, then use:
 
 ```bash
-nice parallel -j 72 python parseGenbanksExtractCDSsByGeneName.py \
+nice parallel -j 36 python parseGenbanksExtractCDSsByGeneName.py \
 -g *.gbk -c {} :::: core_genes_list.txt
 ```
 
@@ -47,7 +47,7 @@ To run codon-aware alignment using [MACSE](http://journals.plos.org/plosone/arti
 java -jar macse_v1.2.jar -prog alignSequences -seq path/to/locus_name.fasta -gc_def 11
 
 #In parallel, start a 'screen' session with 'screen -S macse' (remove the '--dry-run' when ready to run) and do:
-nice parallel --dry-run -j 72 java -jar macse_v1.2.jar -prog alignSequences -seq {} -gc_def 11 ::: path/to/*.fasta
+nice parallel --dry-run -j 36 java -jar macse_v1.2.jar -prog alignSequences -seq {} -gc_def 11 ::: path/to/*.fasta
 
 #NB: if you get an error about the translation tables not being found, move the translation 
 #tables to the location stated in the error report and then re-run
