@@ -44,7 +44,6 @@ for i in ${arr[@]}; do echo $i; grep \> $i | wc -l; done
 To run codon-aware alignment using [MACSE](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0022594), [download MACSE](http://bioweb.supagro.inra.fr/macse/index.php?menu=releases&option=releases), unzip it, find the .jar file and then do:
 
 ```
-#In series:
 java -jar macse_v1.2.jar -prog alignSequences -seq path/to/locus_name.fasta -gc_def 11
 
 #In parallel, start a 'screen' session (remove the '--dry-run' when ready to run) and do:
