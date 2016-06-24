@@ -6,6 +6,8 @@ github schultzm
 dr.mark.schultz@gmail.com
 
 Extract CDS DNA sequences from gbk files using the CDS gene name.
+Can be used to extract one or many CDS DNA sequences from one or 
+many genbank files.
 
 Example usage (in series):
     python parseGenbanksExtractCDSsByGeneName.py -g *.gbk -c accA accB_2 accD
